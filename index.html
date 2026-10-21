@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Designing Data-Intensive Applications — الترجمة العربية</title>
+<meta name="description" content="Designing Data-Intensive Applications — الترجمة العربية الكاملة، قارئ تفاعلي بإضاءة مريحة للعين.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23a8801f'/><text x='32' y='43' font-size='30' text-anchor='middle' fill='%23fffdf3' font-family='serif'>D</text></svg>">
+</head>
+<body>
+
+<div id="progress" aria-hidden="true"><i></i></div>
+
+<header class="topbar">
+  <button class="ibtn" id="navToggle" title="الفهرس (Ctrl+B)" aria-label="إظهار الفهرس" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+  </button>
+
+  <a class="bookid" href="#top" id="homeLink" title="العودة إلى البداية">
+    <span class="bookid-mark" aria-hidden="true"></span>
+    <span class="bookid-text">
+      <span class="bookid-title" dir="ltr">Designing Data-Intensive Applications</span>
+      <span class="bookid-sub" dir="ltr">Martin Kleppmann</span>
+    </span>
+  </a>
+
+  <span class="spacer"></span>
+
+  <button class="ibtn" id="helpBtn" title="اختصارات لوحة المفاتيح (?)" aria-label="المساعدة">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.2 9.3a2.9 2.9 0 0 1 5.6 1c0 1.9-2.8 2.2-2.8 4"/><path d="M12 17.4h.01"/></svg>
+  </button>
+
+  <button class="ibtn" id="searchBtn" title="بحث (Ctrl+F)" aria-label="بحث">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+  </button>
+
+  <div class="menu-wrap">
+    <button class="ibtn" id="settingsBtn" title="إعدادات القراءة" aria-label="إعدادات القراءة" aria-haspopup="true" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2.2"/><circle cx="10" cy="17" r="2.2"/></svg>
+    </button>
+    <div class="menu" id="settingsMenu" role="menu" aria-label="إعدادات القراءة">
+
+      <div class="menu-title">خلفية الصفحة</div>
+      <div class="swatches" role="group" aria-label="خلفية الصفحة">
+        <button class="swatch" data-theme-opt="light" role="menuitemradio" title="أصفر فاتح" aria-label="أصفر فاتح"><i style="background:#fffdf4"></i><span>أصفر فاتح</span></button>
+        <button class="swatch" data-theme-opt="mid" role="menuitemradio" title="أصفر متوسط" aria-label="أصفر متوسط"><i style="background:#fbf2d6"></i><span>أصفر متوسط</span></button>
+        <button class="swatch" data-theme-opt="cream" role="menuitemradio" title="أبيض سكري" aria-label="أبيض سكري"><i style="background:#fdfcf9"></i><span>أبيض سكري</span></button>
+        <button class="swatch" data-theme-opt="dark" role="menuitemradio" title="ليلي" aria-label="ليلي"><i style="background:#1c1a15"></i><span>ليلي</span></button>
+      </div>
+
+      <div class="menu-sep"></div>
+      <div class="menu-title">خط النص</div>
+      <div class="fonts" role="group" aria-label="خط النص">
+        <button class="fontbtn" data-font-opt="naskh" role="menuitemradio" style="font-family:'Noto Naskh Arabic',serif">نسخ</button>
+        <button class="fontbtn" data-font-opt="cairo" role="menuitemradio" style="font-family:'Cairo',sans-serif">حديث</button>
+        <button class="fontbtn" data-font-opt="amiri" role="menuitemradio" style="font-family:'Amiri',serif">أميري</button>
+      </div>
+
+      <div class="menu-sep"></div>
+      <div class="menu-title">حجم الخط</div>
+      <div class="sizerow">
+        <button class="ibtn" id="fsDown" title="تصغير" aria-label="تصغير الخط"><span class="sz">أ−</span></button>
+        <span class="hint" id="fsLabel">100%</span>
+        <button class="ibtn" id="fsUp" title="تكبير" aria-label="تكبير الخط"><span class="sz">أ+</span></button>
+      </div>
+
+      <div class="menu-title">تباعد الأسطر</div>
+      <div class="sizerow">
+        <button class="ibtn" id="lhDown" title="أضيق" aria-label="تقليل تباعد الأسطر"><span class="sz">أ−</span></button>
+        <span class="hint" id="lhLabel">1.95</span>
+        <button class="ibtn" id="lhUp" title="أوسع" aria-label="زيادة تباعد الأسطر"><span class="sz">أ+</span></button>
+      </div>
+
+      <div class="menu-title">عرض النص</div>
+      <div class="sizerow">
+        <button class="ibtn" id="wDown" title="أضيق" aria-label="تقليل عرض النص"><span class="sz">أ−</span></button>
+        <span class="hint" id="wLabel">40rem</span>
+        <button class="ibtn" id="wUp" title="أوسع" aria-label="زيادة عرض النص"><span class="sz">أ+</span></button>
+      </div>
+
+      <div class="menu-sep"></div>
+      <div class="menu-title">عرض</div>
+      <button class="menu-item" id="toggleNumbers" role="menuitemcheckbox">أرقام صفحات الكتاب</button>
+      <button class="menu-item" id="toggleJustify" role="menuitemcheckbox">ضبط الأسطر (Justify)</button>
+      <button class="menu-item" id="printBtn" role="menuitem">طباعة / حفظ PDF</button>
+    </div>
+  </div>
+</header>
+
+<div class="searchbar" id="searchBar" role="search">
+  <svg class="s-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+  <input type="search" id="searchInput" placeholder="ابحث في الكتاب… (مثال: quorum، Avro، leader)"
+         autocomplete="off" spellcheck="false">
+  <span class="search-count" id="searchCount">—</span>
+  <button class="ibtn" id="searchPrev" title="السابق (Shift+Enter)" aria-label="النتيجة السابقة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+  <button class="ibtn" id="searchNext" title="التالي (Enter)" aria-label="النتيجة التالية"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></button>
+  <button class="ibtn" id="searchClose" title="إغلاق (Esc)" aria-label="إغلاق البحث"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<div class="layout" id="top">
+
+  <nav class="drawer" id="sidebar" aria-label="فهرس المحتويات" aria-hidden="true">
+    <div class="drawer-head">
+      <div class="drawer-title">
+        <b>فهرس المحتويات</b>
+        <span>محتوى الكتاب</span>
+      </div>
+      <button class="ibtn" id="drawerClose" title="إغلاق" aria-label="إغلاق الفهرس"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <input class="toc-filter" id="tocFilter" type="search" placeholder="تصفية العناوين…" autocomplete="off" spellcheck="false">
+    <ul class="toc" id="toc"></ul>
+  </nav>
+
+  <main class="reader">
+
+    <section class="page titlepage" id="titlepage">
+      <div class="tp-emblem" aria-hidden="true"><span></span><span></span><span></span></div>
+      <h1 class="tp-title" dir="ltr">Designing Data-Intensive<br>Applications</h1>
+      <div class="tp-rule"></div>
+      <p class="tp-sub" dir="ltr">The Big Ideas Behind Reliable, Scalable,<br>and Maintainable Systems</p>
+      <p class="tp-author" dir="ltr">Martin Kleppmann</p>
+      <div class="tp-rule thin"></div>
+      <p class="tp-note">
+        الترجمة العربية الكاملة — فهرس تفاعلي، بحث فوري، وأمثلة شيفرة ملوّنة،
+        مع ثلاثة أوضاع خلفية مريحة للعين ووضع ليلي.
+      </p>
+      <ul class="tp-stats">
+        <li><b>12</b> فصلًا</li>
+        <li><b>613</b> صفحة</li>
+        <li><b>232</b> ألف كلمة</li>
+        <li><b>90</b> شكلًا</li>
+      </ul>
+      <button class="btn primary" id="startReading">ابدأ القراءة</button>
+    </section>
+
+    <article class="page content" id="content">
+      <div style="text-align:center;padding:4rem 1rem;color:var(--muted);font-family:var(--font-ui)">
+        جارٍ تحميل الكتاب…<br><br>
+        <span class="hint" style="direction:ltr">Loading…</span>
+      </div>
+    </article>
+  </main>
+</div>
+
+<footer class="botbar">
+  <button class="ibtn wide" id="prevChapter" title="الفصل السابق ([)" aria-label="الفصل السابق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+  <div class="position">
+    <span id="posLabel">—</span>
+    <span class="sep">•</span>
+    <span id="pctLabel">0%</span>
+    <span class="sep">•</span>
+    <span id="timeLabel">—</span>
+  </div>
+  <button class="ibtn wide" id="nextChapter" title="الفصل التالي (])" aria-label="الفصل التالي"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></button>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="ibtn lightbox-close" id="lightboxClose" aria-label="إغلاق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="lightbox-inner">
+    <img id="lightboxImg" alt="">
+    <div class="lightbox-cap" id="lightboxCap"></div>
+  </div>
+</div>
+
+<div class="help" id="help" hidden>
+  <div class="help-card" role="dialog" aria-label="اختصارات لوحة المفاتيح">
+    <div class="help-head">
+      <b>اختصارات لوحة المفاتيح</b>
+      <button class="ibtn" id="helpClose" aria-label="إغلاق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <ul class="help-list">
+      <li><span class="kbd">Ctrl</span>+<span class="kbd">F</span> <i>البحث في الكتاب</i></li>
+      <li><span class="kbd">/</span> <i>البحث</i></li>
+      <li><span class="kbd">Ctrl</span>+<span class="kbd">B</span> <i>إظهار/إخفاء الفهرس</i></li>
+      <li><span class="kbd">t</span> <i>تبديل الخلفية</i></li>
+      <li><span class="kbd">+</span> / <span class="kbd">−</span> <i>تكبير/تصغير الخط</i></li>
+      <li><span class="kbd">[</span> / <span class="kbd">]</span> <i>الفصل السابق/التالي</i></li>
+      <li><span class="kbd">Enter</span> / <span class="kbd">Shift</span>+<span class="kbd">Enter</span> <i>نتيجة بحث تالية/سابقة</i></li>
+      <li><span class="kbd">Esc</span> <i>إغلاق ما هو مفتوح</i></li>
+      <li><span class="kbd">?</span> <i>هذه النافذة</i></li>
+    </ul>
+    <p class="help-note">اضغط على أي شكل في الكتاب لتكبيره، وعلى كتلة الشيفرة لنسخها.</p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<button class="fab" id="toTop" title="أعلى الصفحة" aria-label="أعلى الصفحة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+
+<script src="assets/book.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

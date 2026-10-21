@@ -1,0 +1,892 @@
+[
+ {
+  "num": "1-1",
+  "kind": "Figure",
+  "page": 26,
+  "file": "fig-1-1.png",
+  "caption": "One possible architecture for a data system that combines several",
+  "w": 1500,
+  "h": 1067,
+  "shard_tokens": []
+ },
+ {
+  "num": "1-2",
+  "kind": "Figure",
+  "page": 33,
+  "file": "fig-1-2.png",
+  "caption": "Simple relational schema for implementing a Twitter home timeline.",
+  "w": 1500,
+  "h": 540,
+  "shard_tokens": []
+ },
+ {
+  "num": "1-3",
+  "kind": "Figure",
+  "page": 33,
+  "file": "fig-1-3.png",
+  "caption": "Twitter’s data pipeline for delivering tweets to followers, with load parame‐",
+  "w": 1500,
+  "h": 540,
+  "shard_tokens": []
+ },
+ {
+  "num": "1-4",
+  "kind": "Figure",
+  "page": 35,
+  "file": "fig-1-4.png",
+  "caption": "Illustrating mean and percentiles: response times for a sample of 100",
+  "w": 1500,
+  "h": 419,
+  "shard_tokens": []
+ },
+ {
+  "num": "1-5",
+  "kind": "Figure",
+  "page": 38,
+  "file": "fig-1-5.png",
+  "caption": "When several backend calls are needed to serve a request, it takes just a sin‐",
+  "w": 1500,
+  "h": 679,
+  "shard_tokens": []
+ },
+ {
+  "num": "2-1",
+  "kind": "Figure",
+  "page": 52,
+  "file": "fig-2-1.png",
+  "caption": "Representing a LinkedIn profile using a relational schema. Photo of Bill",
+  "w": 1500,
+  "h": 1357,
+  "shard_tokens": []
+ },
+ {
+  "num": "2-2",
+  "kind": "Figure",
+  "page": 53,
+  "file": "fig-2-2.png",
+  "caption": "One-to-many relationships forming a tree structure.",
+  "w": 1500,
+  "h": 660,
+  "shard_tokens": []
+ },
+ {
+  "num": "2-3",
+  "kind": "Figure",
+  "page": 56,
+  "file": "fig-2-3.png",
+  "caption": "The company name is not just a string, but a link to a company entity.",
+  "w": 1009,
+  "h": 834,
+  "shard_tokens": []
+ },
+ {
+  "num": "2-4",
+  "kind": "Figure",
+  "page": 56,
+  "file": "fig-2-4.png",
+  "caption": "Extending résumés with many-to-many relationships.",
+  "w": 1500,
+  "h": 1024,
+  "shard_tokens": []
+ },
+ {
+  "num": "2-5",
+  "kind": "Figure",
+  "page": 71,
+  "file": "fig-2-5.png",
+  "caption": "Example of graph-structured data (boxes represent vertices, arrows repre‐",
+  "w": 1500,
+  "h": 901,
+  "shard_tokens": []
+ },
+ {
+  "num": "2-6",
+  "kind": "Figure",
+  "page": 83,
+  "file": "fig-2-6.png",
+  "caption": "Determining that Idaho is in North America, using the Datalog rules from",
+  "w": 1500,
+  "h": 480,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-1",
+  "kind": "Figure",
+  "page": 93,
+  "file": "fig-3-1.png",
+  "caption": "Storing a log of key-value pairs in a CSV-like format, indexed with an in-",
+  "w": 1500,
+  "h": 738,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-2",
+  "kind": "Figure",
+  "page": 94,
+  "file": "fig-3-2.png",
+  "caption": "Compaction of a key-value update log (counting the number of times each",
+  "w": 1500,
+  "h": 545,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-3",
+  "kind": "Figure",
+  "page": 95,
+  "file": "fig-3-3.png",
+  "caption": "Performing compaction and segment merging simultaneously.",
+  "w": 1500,
+  "h": 769,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-4",
+  "kind": "Figure",
+  "page": 97,
+  "file": "fig-3-4.png",
+  "caption": "Merging several SSTable segments, retaining only the most recent value",
+  "w": 1500,
+  "h": 1000,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-5",
+  "kind": "Figure",
+  "page": 98,
+  "file": "fig-3-5.png",
+  "caption": "An SSTable with an in-memory index.",
+  "w": 1500,
+  "h": 737,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-6",
+  "kind": "Figure",
+  "page": 101,
+  "file": "fig-3-6.png",
+  "caption": "Looking up a key using a B-tree index.",
+  "w": 1500,
+  "h": 831,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-7",
+  "kind": "Figure",
+  "page": 102,
+  "file": "fig-3-7.png",
+  "caption": "Growing a B-tree by splitting a page.",
+  "w": 1500,
+  "h": 842,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-8",
+  "kind": "Figure",
+  "page": 113,
+  "file": "fig-3-8.png",
+  "caption": "Simplified outline of ETL into a data warehouse.",
+  "w": 1500,
+  "h": 1066,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-9",
+  "kind": "Figure",
+  "page": 115,
+  "file": "fig-3-9.png",
+  "caption": "Example of a star schema for use in a data warehouse.",
+  "w": 1500,
+  "h": 1644,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-10",
+  "kind": "Figure",
+  "page": 118,
+  "file": "fig-3-10.png",
+  "caption": "Storing relational data by column, rather than by row.",
+  "w": 1500,
+  "h": 1123,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-11",
+  "kind": "Figure",
+  "page": 119,
+  "file": "fig-3-11.png",
+  "caption": "Compressed, bitmap-indexed storage of a single column.",
+  "w": 1500,
+  "h": 1107,
+  "shard_tokens": []
+ },
+ {
+  "num": "3-12",
+  "kind": "Figure",
+  "page": 123,
+  "file": "fig-3-12.png",
+  "caption": "Two dimensions of a data cube, aggregating data by summing.",
+  "w": 1500,
+  "h": 772,
+  "shard_tokens": []
+ },
+ {
+  "num": "4-1",
+  "kind": "Figure",
+  "page": 138,
+  "file": "fig-4-1.png",
+  "caption": "Example record (Example 4-1) encoded using MessagePack.",
+  "w": 1500,
+  "h": 1266,
+  "shard_tokens": []
+ },
+ {
+  "num": "4-2",
+  "kind": "Figure",
+  "page": 139,
+  "file": "fig-4-2.png",
+  "caption": "Example record encoded using Thrift’s BinaryProtocol.",
+  "w": 1500,
+  "h": 1121,
+  "shard_tokens": []
+ },
+ {
+  "num": "4-3",
+  "kind": "Figure",
+  "page": 140,
+  "file": "fig-4-3.png",
+  "caption": "Example record encoded using Thrift’s CompactProtocol.",
+  "w": 1500,
+  "h": 1025,
+  "shard_tokens": []
+ },
+ {
+  "num": "4-4",
+  "kind": "Figure",
+  "page": 141,
+  "file": "fig-4-4.png",
+  "caption": "Example record encoded using Protocol Buffers.",
+  "w": 1500,
+  "h": 924,
+  "shard_tokens": []
+ },
+ {
+  "num": "4-5",
+  "kind": "Figure",
+  "page": 144,
+  "file": "fig-4-5.png",
+  "caption": "Example record encoded using Avro.",
+  "w": 1500,
+  "h": 989,
+  "shard_tokens": []
+ },
+ {
+  "num": "4-6",
+  "kind": "Figure",
+  "page": 145,
+  "file": "fig-4-6.png",
+  "caption": "An Avro reader resolves differences between the writer’s schema and the",
+  "w": 1500,
+  "h": 538,
+  "shard_tokens": []
+ },
+ {
+  "num": "4-7",
+  "kind": "Figure",
+  "page": 151,
+  "file": "fig-4-7.png",
+  "caption": "When an older version of the application updates data previously written",
+  "w": 1500,
+  "h": 815,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-1",
+  "kind": "Figure",
+  "page": 174,
+  "file": "fig-5-1.png",
+  "caption": "Leader-based (master–slave) replication.",
+  "w": 1500,
+  "h": 481,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-2",
+  "kind": "Figure",
+  "page": 175,
+  "file": "fig-5-2.png",
+  "caption": "Leader-based replication with one synchronous and one asynchronous fol‐",
+  "w": 1500,
+  "h": 587,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-3",
+  "kind": "Figure",
+  "page": 184,
+  "file": "fig-5-3.png",
+  "caption": "A user makes a write, followed by a read from a stale replica. To prevent",
+  "w": 1500,
+  "h": 587,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-4",
+  "kind": "Figure",
+  "page": 186,
+  "file": "fig-5-4.png",
+  "caption": "A user first reads from a fresh replica, then from a stale replica. Time",
+  "w": 1500,
+  "h": 767,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-5",
+  "kind": "Figure",
+  "page": 187,
+  "file": "fig-5-5.png",
+  "caption": "If some partitions are replicated slower than others, an observer may see the",
+  "w": 1500,
+  "h": 959,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-6",
+  "kind": "Figure",
+  "page": 190,
+  "file": "fig-5-6.png",
+  "caption": "Multi-leader replication across multiple datacenters.",
+  "w": 1500,
+  "h": 729,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-7",
+  "kind": "Figure",
+  "page": 192,
+  "file": "fig-5-7.png",
+  "caption": "A write conflict caused by two leaders concurrently updating the same",
+  "w": 1500,
+  "h": 775,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-8",
+  "kind": "Figure",
+  "page": 196,
+  "file": "fig-5-8.png",
+  "caption": "Three example topologies in which multi-leader replication can be set up.",
+  "w": 1500,
+  "h": 416,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-9",
+  "kind": "Figure",
+  "page": 197,
+  "file": "fig-5-9.png",
+  "caption": "With multi-leader replication, writes may arrive in the wrong order at some",
+  "w": 1500,
+  "h": 834,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-10",
+  "kind": "Figure",
+  "page": 199,
+  "file": "fig-5-10.png",
+  "caption": "A quorum write, quorum read, and read repair after a node outage.",
+  "w": 1500,
+  "h": 818,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-11",
+  "kind": "Figure",
+  "page": 201,
+  "file": "fig-5-11.png",
+  "caption": "If w + r > n, at least one of the r replicas you read from must have seen the",
+  "w": 1500,
+  "h": 638,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-12",
+  "kind": "Figure",
+  "page": 206,
+  "file": "fig-5-12.png",
+  "caption": "Concurrent writes in a Dynamo-style datastore: there is no well-defined",
+  "w": 1500,
+  "h": 732,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-13",
+  "kind": "Figure",
+  "page": 210,
+  "file": "fig-5-13.png",
+  "caption": "Capturing causal dependencies between two clients concurrently editing a",
+  "w": 1500,
+  "h": 850,
+  "shard_tokens": []
+ },
+ {
+  "num": "5-14",
+  "kind": "Figure",
+  "page": 210,
+  "file": "fig-5-14.png",
+  "caption": "Graph of causal dependencies in Figure 5-13.",
+  "w": 1500,
+  "h": 373,
+  "shard_tokens": []
+ },
+ {
+  "num": "6-1",
+  "kind": "Figure",
+  "page": 222,
+  "file": "fig-6-1.png",
+  "caption": "Combining replication and partitioning: each node acts as leader for some",
+  "w": 1500,
+  "h": 779,
+  "shard_tokens": []
+ },
+ {
+  "num": "6-2",
+  "kind": "Figure",
+  "page": 223,
+  "file": "fig-6-2.png",
+  "caption": "A print encyclopedia is partitioned by key range.",
+  "w": 1500,
+  "h": 532,
+  "shard_tokens": []
+ },
+ {
+  "num": "6-3",
+  "kind": "Figure",
+  "page": 225,
+  "file": "fig-6-3.png",
+  "caption": "Partitioning by hash of key.",
+  "w": 1500,
+  "h": 469,
+  "shard_tokens": []
+ },
+ {
+  "num": "6-4",
+  "kind": "Figure",
+  "page": 228,
+  "file": "fig-6-4.png",
+  "caption": "Partitioning secondary indexes by document.",
+  "w": 1500,
+  "h": 710,
+  "shard_tokens": []
+ },
+ {
+  "num": "6-5",
+  "kind": "Figure",
+  "page": 229,
+  "file": "fig-6-5.png",
+  "caption": "Partitioning secondary indexes by term.",
+  "w": 1500,
+  "h": 636,
+  "shard_tokens": []
+ },
+ {
+  "num": "6-6",
+  "kind": "Figure",
+  "page": 232,
+  "file": "fig-6-6.png",
+  "caption": "Adding a new node to a database cluster with multiple partitions per node.",
+  "w": 1500,
+  "h": 810,
+  "shard_tokens": []
+ },
+ {
+  "num": "6-7",
+  "kind": "Figure",
+  "page": 236,
+  "file": "fig-6-7.png",
+  "caption": "Three different ways of routing a request to the right node.",
+  "w": 1500,
+  "h": 667,
+  "shard_tokens": []
+ },
+ {
+  "num": "6-8",
+  "kind": "Figure",
+  "page": 236,
+  "file": "fig-6-8.png",
+  "caption": "Using ZooKeeper to keep track of assignment of partitions to nodes.",
+  "w": 1500,
+  "h": 656,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-1",
+  "kind": "Figure",
+  "page": 247,
+  "file": "fig-7-1.png",
+  "caption": "A race condition between two clients concurrently incrementing a counter.",
+  "w": 1500,
+  "h": 433,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-2",
+  "kind": "Figure",
+  "page": 250,
+  "file": "fig-7-2.png",
+  "caption": "Violating isolation: one transaction reads another transaction’s uncommit‐",
+  "w": 1500,
+  "h": 598,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-3",
+  "kind": "Figure",
+  "page": 250,
+  "file": "fig-7-3.png",
+  "caption": "Atomicity ensures that if an error occurs any prior writes from that transac‐",
+  "w": 1500,
+  "h": 397,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-4",
+  "kind": "Figure",
+  "page": 255,
+  "file": "fig-7-4.png",
+  "caption": "No dirty reads: user 2 sees the new value for x only after user 1’s transaction",
+  "w": 1500,
+  "h": 433,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-5",
+  "kind": "Figure",
+  "page": 257,
+  "file": "fig-7-5.png",
+  "caption": "With dirty writes, conflicting writes from different transactions can be",
+  "w": 1500,
+  "h": 677,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-6",
+  "kind": "Figure",
+  "page": 258,
+  "file": "fig-7-6.png",
+  "caption": "Read skew: Alice observes the database in an inconsistent state.",
+  "w": 1500,
+  "h": 677,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-7",
+  "kind": "Figure",
+  "page": 261,
+  "file": "fig-7-7.png",
+  "caption": "Implementing snapshot isolation using multi-version objects.",
+  "w": 1500,
+  "h": 1135,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-8",
+  "kind": "Figure",
+  "page": 268,
+  "file": "fig-7-8.png",
+  "caption": "Example of write skew causing an application bug.",
+  "w": 1500,
+  "h": 1051,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-9",
+  "kind": "Figure",
+  "page": 275,
+  "file": "fig-7-9.png",
+  "caption": "The difference between an interactive transaction and a stored procedure",
+  "w": 1500,
+  "h": 866,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-10",
+  "kind": "Figure",
+  "page": 284,
+  "file": "fig-7-10.png",
+  "caption": "Detecting when a transaction reads outdated values from an MVCC",
+  "w": 1500,
+  "h": 910,
+  "shard_tokens": []
+ },
+ {
+  "num": "7-11",
+  "kind": "Figure",
+  "page": 285,
+  "file": "fig-7-11.png",
+  "caption": "In serializable snapshot isolation, detecting when one transaction modifies",
+  "w": 1500,
+  "h": 933,
+  "shard_tokens": []
+ },
+ {
+  "num": "8-1",
+  "kind": "Figure",
+  "page": 299,
+  "file": "fig-8-1.png",
+  "caption": "If you send a request and don’t get a response, it’s not possible to distinguish",
+  "w": 1500,
+  "h": 467,
+  "shard_tokens": []
+ },
+ {
+  "num": "8-2",
+  "kind": "Figure",
+  "page": 304,
+  "file": "fig-8-2.png",
+  "caption": "If several machines send network traffic to the same destination, its switch",
+  "w": 1500,
+  "h": 563,
+  "shard_tokens": []
+ },
+ {
+  "num": "8-3",
+  "kind": "Figure",
+  "page": 313,
+  "file": "fig-8-3.png",
+  "caption": "The write by client B is causally later than the write by client A, but B’s",
+  "w": 1500,
+  "h": 690,
+  "shard_tokens": []
+ },
+ {
+  "num": "8-4",
+  "kind": "Figure",
+  "page": 323,
+  "file": "fig-8-4.png",
+  "caption": "Incorrect implementation of a distributed lock: client 1 believes that it still",
+  "w": 1500,
+  "h": 550,
+  "shard_tokens": []
+ },
+ {
+  "num": "8-5",
+  "kind": "Figure",
+  "page": 324,
+  "file": "fig-8-5.png",
+  "caption": "Making access to storage safe by allowing writes only in the order of increas‐",
+  "w": 1500,
+  "h": 550,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-1",
+  "kind": "Figure",
+  "page": 345,
+  "file": "fig-9-1.png",
+  "caption": "This system is not linearizable, causing football fans to be confused.",
+  "w": 1500,
+  "h": 1074,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-2",
+  "kind": "Figure",
+  "page": 346,
+  "file": "fig-9-2.png",
+  "caption": "If a read request is concurrent with a write request, it may return either the",
+  "w": 1500,
+  "h": 431,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-3",
+  "kind": "Figure",
+  "page": 348,
+  "file": "fig-9-3.png",
+  "caption": "After any one read has returned the new value, all following reads (on the",
+  "w": 1500,
+  "h": 431,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-4",
+  "kind": "Figure",
+  "page": 349,
+  "file": "fig-9-4.png",
+  "caption": "Visualizing the points in time at which the reads and writes appear to have",
+  "w": 1500,
+  "h": 723,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-5",
+  "kind": "Figure",
+  "page": 353,
+  "file": "fig-9-5.png",
+  "caption": "The web server and image resizer communicate both through file storage",
+  "w": 1500,
+  "h": 480,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-6",
+  "kind": "Figure",
+  "page": 355,
+  "file": "fig-9-6.png",
+  "caption": "A nonlinearizable execution, despite using a strict quorum.",
+  "w": 1500,
+  "h": 834,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-7",
+  "kind": "Figure",
+  "page": 356,
+  "file": "fig-9-7.png",
+  "caption": "A network interruption forcing a choice between linearizability and availa‐",
+  "w": 1500,
+  "h": 673,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-8",
+  "kind": "Figure",
+  "page": 367,
+  "file": "fig-9-8.png",
+  "caption": "Lamport timestamps provide a total ordering consistent with causality.",
+  "w": 1500,
+  "h": 630,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-9",
+  "kind": "Figure",
+  "page": 377,
+  "file": "fig-9-9.png",
+  "caption": "A successful execution of two-phase commit (2PC).",
+  "w": 1500,
+  "h": 504,
+  "shard_tokens": []
+ },
+ {
+  "num": "9-10",
+  "kind": "Figure",
+  "page": 380,
+  "file": "fig-9-10.png",
+  "caption": "The coordinator crashes after participants vote “yes.” Database 1 does not",
+  "w": 1500,
+  "h": 523,
+  "shard_tokens": []
+ },
+ {
+  "num": "10-1",
+  "kind": "Figure",
+  "page": 422,
+  "file": "fig-10-1.png",
+  "caption": "A MapReduce job with three mappers and three reducers.",
+  "w": 1500,
+  "h": 1000,
+  "shard_tokens": []
+ },
+ {
+  "num": "10-2",
+  "kind": "Figure",
+  "page": 425,
+  "file": "fig-10-2.png",
+  "caption": "A join between a log of user activity events and a database of user profiles.",
+  "w": 1500,
+  "h": 644,
+  "shard_tokens": []
+ },
+ {
+  "num": "10-3",
+  "kind": "Figure",
+  "page": 426,
+  "file": "fig-10-3.png",
+  "caption": "A reduce-side sort-merge join on user ID. If the input datasets are parti‐",
+  "w": 1500,
+  "h": 681,
+  "shard_tokens": []
+ },
+ {
+  "num": "11-1",
+  "kind": "Figure",
+  "page": 466,
+  "file": "fig-11-1.png",
+  "caption": "(a) Load balancing: sharing the work of consuming a topic among con‐",
+  "w": 1500,
+  "h": 718,
+  "shard_tokens": []
+ },
+ {
+  "num": "11-2",
+  "kind": "Figure",
+  "page": 467,
+  "file": "fig-11-2.png",
+  "caption": "Consumer 2 crashes while processing m3, so it is redelivered to consumer 1",
+  "w": 1500,
+  "h": 758,
+  "shard_tokens": []
+ },
+ {
+  "num": "11-3",
+  "kind": "Figure",
+  "page": 469,
+  "file": "fig-11-3.png",
+  "caption": "Producers send messages by appending them to a topic-partition file, and",
+  "w": 1500,
+  "h": 795,
+  "shard_tokens": []
+ },
+ {
+  "num": "11-4",
+  "kind": "Figure",
+  "page": 474,
+  "file": "fig-11-4.png",
+  "caption": "In the database, X is first set to A and then to B, while at the search index",
+  "w": 1500,
+  "h": 589,
+  "shard_tokens": []
+ },
+ {
+  "num": "11-5",
+  "kind": "Figure",
+  "page": 475,
+  "file": "fig-11-5.png",
+  "caption": "Taking data in the order it was written to one database, and applying the",
+  "w": 1500,
+  "h": 628,
+  "shard_tokens": []
+ },
+ {
+  "num": "11-6",
+  "kind": "Figure",
+  "page": 481,
+  "file": "fig-11-6.png",
+  "caption": "The relationship between the current application state and an event",
+  "w": 1500,
+  "h": 271,
+  "shard_tokens": []
+ },
+ {
+  "num": "11-7",
+  "kind": "Figure",
+  "page": 491,
+  "file": "fig-11-7.png",
+  "caption": "Windowing by processing time introduces artifacts due to variations in",
+  "w": 1500,
+  "h": 843,
+  "shard_tokens": []
+ },
+ {
+  "num": "12-1",
+  "kind": "Figure",
+  "page": 530,
+  "file": "fig-12-1.png",
+  "caption": "In a search index, writes (document updates) meet reads (queries).",
+  "w": 1500,
+  "h": 573,
+  "shard_tokens": []
+ }
+]
